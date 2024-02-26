@@ -1,0 +1,102 @@
+/* comment */
+
+
+
+body {
+	width: 960px;
+	margin: 10px auto;
+	font-family: sans-serif;
+}
+
+#box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.thumb {
+
+	height: 120px;
+	width: 160px;
+	float: left;
+	margin: 12px;
+	border: 2px solid #a2aab8;
+	border-radius: 6%;
+	background-color: #8cadfa;
+	background-image: url(placeholder-image.png); 
+	background-size: 90%;
+    	background-position-x: center;
+}
+
+.thumb p {
+	font-size: 16px;
+    	border-radius: 0px 0px 8px 8px; 
+ 	background-color: white;
+ 	color: black;
+ 	padding: 2px;
+	text-align: center;
+   	margin-top: 98px;
+}
+
+p1 {
+	text-align: justify;
+ 	margin: 10px;
+    	font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+
+	#box {
+       	 width: 100%;
+  	}
+    	p1 {
+         font-size: 1em;
+  	}
+   	.thumb p {
+         font-size: 16px;
+  	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+	#box {
+         width: 60%;
+   	}	
+    	p1 {
+         font-size: 0.9em;
+   	}
+   	.thumb {
+         height: 102px;
+	 width: 150px;
+         background-size: 85%;
+    	}
+    	.thumb p {
+         font-size: 14px;
+         margin-top: 80px;
+         padding: 3px;
+    	}   
+}
+
+
+
+@media screen and (max-width: 414px) {
+
+	#box {
+         width: 30%;
+    	}
+    	p1 {
+         font-size: 0.8em;
+    	}
+    	.thumb {
+         height: 80px;
+	 width: 120px;
+         background-size: 80%;
+    	}
+    	.thumb p {
+         font-size: 12px;
+         margin-top: 60px;
+         padding: 2px;
+    	}
+}
